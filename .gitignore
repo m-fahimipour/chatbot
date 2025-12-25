@@ -1,0 +1,6 @@
+# Files
+.env
+.env.local
+
+# Paths and Folders
+node_modules
