@@ -6,19 +6,22 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src --exec node --loader ts-node/esm src/server.ts"
+    "dev": "nodemon --watch src --exec tsx --env-file=.env.local src/server.ts",
+    "old-dev": "nodemon --watch src --exec node --env-file=.env.local --loader ts-node/esm src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.2.1",
+    "express-validator": "^7.3.1",
     "openai": "^6.15.0"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^25.0.3",
     "nodemon": "^3.1.11",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0"
   }
 }

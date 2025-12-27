@@ -11,17 +11,18 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
-
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "baseUrl": "./src",
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
 
     "paths": {
-      "./*": ["~/*"]
+      "~/*": ["./*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules"],
 
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
