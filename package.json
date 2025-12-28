@@ -13,7 +13,7 @@
     "typescript": "^5.9.3"
   },
   "workspaces": [
-    "./backend/*",
-    "./frontend/*"
+    "backend",
+    "frontend"
   ]
 }
