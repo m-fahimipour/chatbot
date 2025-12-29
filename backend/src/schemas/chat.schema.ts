@@ -1,7 +1,9 @@
 export interface IChatSchema {
+  role: string;
   message: string;
 }
 
 export enum EChatSchema {
-  message = "message",
+  content = "content",
+  role = "role",
 }

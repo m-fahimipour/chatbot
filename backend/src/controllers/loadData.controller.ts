@@ -1,8 +1,8 @@
 import fs from "fs/promises";
 import path from "path";
-import type { ChatCompletionMessageParam } from "openai/resources";
+import type { ResponseInput } from "openai/resources/responses/responses.mjs";
 
-let chatList: ChatCompletionMessageParam[] = [];
+let chatList: ResponseInput = [];
 
 async function loadDataController() {
   try {
