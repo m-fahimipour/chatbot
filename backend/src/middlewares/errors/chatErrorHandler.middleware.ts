@@ -8,7 +8,7 @@ export function chatErrorHandler(
 ) {
   const result = validationResult(req);
   if (!result.isEmpty()) {
-    res.json(result.array()).status(400);
+    res.status(401).json(result.array());
   } else {
     next();
   }
